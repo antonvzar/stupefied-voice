@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div class="app" id="#app">
     <h1>Page with posts</h1>
     <my-button @click="showDialogue" style="margin: 15px 0"
       >Create the post</my-button
@@ -13,9 +13,9 @@
 </template>
 
 <script>
-import postForm from "@/components/postForm";
-import postList from "@/components/postList";
-import myDialogue from "@/components/UI/myDialogue";
+import postForm from "@/components/postForm.vue";
+import postList from "@/components/postList.vue";
+
 export default {
   components: {
     postList,
